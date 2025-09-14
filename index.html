@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Sistema Tributario Municipal - Portal Informativo">
+    <meta name="keywords" content="tributos, municipalidad, impuestos, arbitrios">
+    <meta name="author" content="Tu Nombre">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Tributario Municipal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Encabezado con Menú -->
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo Municipalidad">
+            <h1>Portal Tributario Municipal</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#informacion">Información</a></li>
+                <li><a href="#formulario">Contacto</a></li>
+                <li><a href="#tablas">Tablas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio" class="contenido">
+        <h2>Bienvenido al Sistema Tributario Municipal</h2>
+        <p>En este portal podrás encontrar información sobre <strong>impuestos, arbitrios y contribuciones</strong> 
+        que se aplican en la municipalidad. Nuestro objetivo es facilitar a los vecinos el acceso a la información 
+        y brindar un canal de atención directa.</p>
+        <img src="img/municipalidad.jpg" alt="Municipalidad">
+    </section>
+
+    <!-- Sección Información -->
+    <section id="informacion" class="contenido">
+        <h2>¿Qué son los Tributos Municipales?</h2>
+        <p>Los tributos municipales son ingresos que permiten financiar los servicios públicos locales. 
+        Incluyen:</p>
+        <ul>
+            <li>Impuesto Predial</li>
+            <li>Impuesto de Alcabala</li>
+            <li>Arbitrios (limpieza, parques y serenazgo)</li>
+            <li>Multas Tributarias</li>
+        </ul>
+        <img src="img/impuestos.jpg" alt="Impuestos Municipales">
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section id="formulario" class="contenido">
+        <h2>Formulario de Contacto</h2>
+        <form>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="consulta">Consulta Tributaria:</label>
+            <textarea id="consulta" name="consulta" rows="5" required></textarea>
+
+            <button type="submit">Enviar Consulta</button>
+        </form>
+    </section>
+
+    <!-- Tablas -->
+    <section id="tablas" class="contenido">
+        <h2>Tasas y Cronogramas de Pago</h2>
+
+        <h3>Arbitrios Municipales 2025</h3>
+        <table>
+            <tr>
+                <th>Concepto</th>
+                <th>Monto (S/.)</th>
+                <th>Periodo</th>
+            </tr>
+            <tr>
+                <td>Limpieza Pública</td>
+                <td>50.00</td>
+                <td>Mensual</td>
+            </tr>
+            <tr>
+                <td>Parques y Jardines</td>
+                <td>30.00</td>
+                <td>Mensual</td>
+            </tr>
+            <tr>
+                <td>Serenazgo</td>
+                <td>45.00</td>
+                <td>Mensual</td>
+            </tr>
+        </table>
+
+        <h3>Cronograma de Pago Predial 2025</h3>
+        <table>
+            <tr>
+                <th>Trimestre</th>
+                <th>Fecha Límite</th>
+            </tr>
+            <tr>
+                <td>1° Trimestre</td>
+                <td>28 de febrero</td>
+            </tr>
+            <tr>
+                <td>2° Trimestre</td>
+                <td>31 de mayo</td>
+            </tr>
+            <tr>
+                <td>3° Trimestre</td>
+                <td>31 de agosto</td>
+            </tr>
+            <tr>
+                <td>4° Trimestre</td>
+                <td>30 de noviembre</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2025 Municipalidad de La Victoria - Sistema Tributario</p>
+    </footer>
+
+</body>
+</html>
