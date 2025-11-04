@@ -1,98 +1,261 @@
-/* Estilos Generales */
+/* ==================== ESTILOS GENERALES ==================== */
+/* Se define la fuente base, color principal y fondo de la página */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background: #f8f9fa;
+    color: #003366;
 }
 
-/* Encabezado */
+/* ==================== ENCABEZADO ==================== */
+/* Contenedor superior con logotipo y menú */
 header {
-    background: #004080;
+    background: linear-gradient(90deg, #003366, #004080);
     color: white;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
+/* Logotipo del portal */
 header .logo {
     display: flex;
     align-items: center;
 }
 
 header .logo img {
-    width: 50px;
-    margin-right: 10px;
+    width: 120px;
+    height: auto;
+    margin-right: 15px;
+    transition: transform 0.3s;
 }
 
+/* Pequeño efecto al pasar el cursor sobre el logo */
+header .logo img:hover {
+    transform: scale(1.06);
+}
+
+/* Menú de navegación principal */
 nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
 }
 
+/* Espaciado entre ítems */
 nav ul li {
-    margin: 0 15px;
+    margin: 8px 15px;
 }
 
+/* Enlaces del menú */
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
+/* Efecto hover en enlaces del menú */
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #aaddff;
 }
 
-/* Secciones */
+/* ==================== SECCIONES GENERALES ==================== */
+/* Contenedor general de cada bloque de contenido */
 .contenido {
     padding: 40px 20px;
     background: white;
     margin: 20px;
     border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.08);
 }
 
-.contenido img {
-    max-width: 100%;
+/* Títulos centrados y destacados */
+.contenido h2 {
+    text-align: center;
+    color: #003366;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Párrafos generales centrados */
+.contenido p {
+    text-align: center;
+    color: #003366;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ==================== SECCIÓN DE INICIO ==================== */
+#inicio h2 {
+    font-size: 32px;
+    color: #0033a0;
+    text-align: center;
+}
+
+#inicio p {
+    font-size: 20px;
+    color: #0033a0;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Imagen principal centrada y con bordes redondeados */
+#inicio img {
+    display: block;
+    margin: 20px auto;
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ==================== SECCIÓN INFORMACIÓN ==================== */
+/* Título principal */
+#informacion h2 {
+    font-size: 30px;
+    color: #0033a0;
+    text-align: center;
+}
+
+/* Descripción introductoria */
+#informacion p {
+    font-size: 18px;
+    color: #003366;
+    text-align: center;
+}
+
+/* Lista de tributos en formato de cuadrícula */
+#informacion ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#informacion ul li {
+    font-size: 18px;
+    color: #003366;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+/* Imagen ilustrativa centrada */
+#informacion img {
+    display: block;
+    margin: 20px auto;
+    max-width: 60%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* ==================== SECCIÓN MULTIMEDIA ==================== */
+/* Título y texto del video */
+#multimedia h2 {
+    font-size: 30px;
+    color: #0033a0;
+    text-align: center;
+}
+
+#multimedia p {
+    text-align: center;
+    font-size: 18px;
+    color: #003366;
+}
+
+/* Contenedor del video */
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Video responsivo con bordes suaves */
+iframe {
+    width: 100%;
+    max-width: 720px;
+    height: 405px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.12);
+}
+
+/* Descripción bajo el video */
+.descripcion-video {
+    text-align: center;
     margin-top: 15px;
-    border-radius: 8px;
+    font-size: 17px;
+    color: #003366;
+    line-height: 1.6;
 }
 
-/* Formulario */
+/* ==================== FORMULARIO ==================== */
+#formulario {
+    text-align: center;
+}
+
+#formulario h2 {
+    font-size: 30px;
+    color: #0033a0;
+}
+
+/* Contenedor del formulario */
 form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
     max-width: 500px;
 }
 
+/* Etiquetas de formulario */
 form label {
     margin-top: 10px;
     font-weight: bold;
+    font-size: 17px;
+    color: #003366;
 }
 
-form input, form textarea, form button {
+/* Campos de entrada y botón */
+form input,
+form textarea,
+form button {
+    width: 100%;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px;
 }
 
+/* Botón animado con hover */
 form button {
     background: #004080;
     color: white;
     border: none;
     margin-top: 15px;
     cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    width: 220px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.25s, transform 0.2s;
 }
 
 form button:hover {
     background: #0066cc;
+    transform: translateY(-2px);
 }
 
-/* Tablas */
+/* ==================== TABLAS ==================== */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -105,15 +268,91 @@ table, th, td {
     padding: 10px;
 }
 
+/* Encabezados de tabla */
 th {
     background: #004080;
     color: white;
 }
 
-/* Pie de página */
+/* Color azul aplicado a títulos de tablas */
+.arbitrios, .cronograma {
+    color: #0033a0;
+    margin-top: 25px;
+}
+
+/* ==================== ANIMACIONES ==================== */
+.fade-in {
+    animation: fadeIn 0.9s ease-in-out;
+}
+.slide-up {
+    animation: slideUp 0.9s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(28px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* ==================== GRID PARA LISTA DE TRIBUTOS ==================== */
+.tributos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+/* Cada elemento de tributo en caja */
+.tributos-grid li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #f6f9ff;
+}
+
+/* Ícono dentro del tributo */
+.icono {
+    font-size: 22px;
+    color: #004080;
+    margin-top: 4px;
+}
+
+/* ==================== PIE DE PÁGINA ==================== */
 footer {
     text-align: center;
     background: #00264d;
     color: white;
     padding: 15px;
+}
+
+/* ==================== RESPONSIVIDAD (ADAPTACIÓN A PANTALLAS PEQUEÑAS) ==================== */
+@media (max-width: 992px) {
+    iframe { height: 360px; }
+    #informacion img { max-width: 75%; }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    #inicio img {
+        max-width: 90%;
+    }
+    .tributos-grid li {
+        flex-direction: row;
+    }
 }
