@@ -1,58 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- ==================== METAETIQUETAS BÁSICAS ==================== -->
     <meta charset="UTF-8">
     <meta name="description" content="Sistema Tributario Municipal - Portal Informativo">
     <meta name="keywords" content="tributos, municipalidad, impuestos, arbitrios">
-    <meta name="author" content="Tu Nombre">
+    <meta name="author" content="Luis Baldarrago">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema Tributario Municipal</title>
+
+    <!-- ==================== FUENTES E ÍCONOS ==================== -->
+    <!-- Fuente Roboto desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Íconos Font Awesome (uso de íconos visuales) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- ==================== VINCULACIÓN DE ARCHIVO CSS EXTERNO ==================== -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Encabezado con Menú -->
+    <!-- ==================== ENCABEZADO CON MENÚ DE NAVEGACIÓN ==================== -->
     <header>
         <div class="logo">
+            <!-- Logotipo municipal -->
             <img src="img/logo.png" alt="Logo Municipalidad">
             <h1>Portal Tributario Municipal</h1>
         </div>
+
+        <!-- Menú principal con enlaces de navegación -->
         <nav>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#informacion">Información</a></li>
-                <li><a href="#formulario">Contacto</a></li>
-                <li><a href="#tablas">Tablas</a></li>
+                <li><a href="#inicio"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                <li><a href="#informacion"><i class="fa-solid fa-circle-info"></i> Información</a></li>
+                <li><a href="#formulario"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
+                <li><a href="#tablas"><i class="fa-solid fa-table"></i> Tablas</a></li>
+                <li><a href="#multimedia"><i class="fa-solid fa-video"></i> Video</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Sección de Inicio -->
-    <section id="inicio" class="contenido">
+    <!-- ==================== SECCIÓN DE INICIO ==================== -->
+    <section id="inicio" class="contenido fade-in">
         <h2>Bienvenido al Sistema Tributario Municipal</h2>
-        <p>En este portal podrás encontrar información sobre <strong>impuestos, arbitrios y contribuciones</strong> 
-        que se aplican en la municipalidad. Nuestro objetivo es facilitar a los vecinos el acceso a la información 
-        y brindar un canal de atención directa.</p>
+        <p>
+            En este portal podrás encontrar información sobre <strong>impuestos, arbitrios y contribuciones</strong> 
+            que se aplican en la municipalidad. Nuestro objetivo es facilitar a los vecinos el acceso a la información 
+            y brindar un canal de atención directa.
+        </p>
+        <!-- Imagen representativa de la municipalidad -->
         <img src="img/municipalidad.jpg" alt="Municipalidad">
     </section>
 
-    <!-- Sección Información -->
-    <section id="informacion" class="contenido">
+    <!-- ==================== SECCIÓN DE INFORMACIÓN ==================== -->
+    <section id="informacion" class="contenido slide-up">
         <h2>¿Qué son los Tributos Municipales?</h2>
-        <p>Los tributos municipales son ingresos que permiten financiar los servicios públicos locales. 
-        Incluyen:</p>
-        <ul>
-            <li>Impuesto Predial</li>
-            <li>Impuesto de Alcabala</li>
-            <li>Arbitrios (limpieza, parques y serenazgo)</li>
-            <li>Multas Tributarias</li>
+        <p>
+            Los tributos municipales son ingresos que permiten financiar los servicios públicos locales. 
+            Incluyen:
+        </p>
+
+        <!-- Lista explicativa de tipos de tributos -->
+        <ul class="tributos-grid">
+            <li>
+                <i class="fa-solid fa-building-columns icono"></i>
+                <strong>Impuesto Predial:</strong> Grava el valor de los predios urbanos y rurales que posee una persona natural o jurídica dentro del distrito.
+            </li>
+            <li>
+                <i class="fa-solid fa-file-signature icono"></i>
+                <strong>Impuesto de Alcabala:</strong> Se aplica a las transferencias de propiedad de bienes inmuebles, como la compra o venta de casas y terrenos.
+            </li>
+            <li>
+                <i class="fa-solid fa-broom icono"></i>
+                <strong>Arbitrios Municipales:</strong> Son pagos por los servicios públicos que brinda la municipalidad, tales como limpieza pública, parques y serenazgo.
+            </li>
+            <li>
+                <i class="fa-solid fa-scale-balanced icono"></i>
+                <strong>Multas Tributarias:</strong> Son sanciones impuestas por el incumplimiento de obligaciones tributarias, como el pago fuera de plazo o la omisión de declaraciones.
+            </li>
         </ul>
+
+        <!-- Imagen ilustrativa sobre impuestos -->
         <img src="img/impuestos.jpg" alt="Impuestos Municipales">
     </section>
 
-    <!-- Formulario de Contacto -->
+    <!-- ==================== SECCIÓN MULTIMEDIA (VIDEO EDUCATIVO) ==================== -->
+    <section id="multimedia" class="contenido fade-in">
+        <h2>Sistema Tributario Peruano: Concepto, Elementos y Clases</h2>
+        <p>Te compartimos un video explicativo sobre el Sistema Tributario Peruano:</p>
+
+        <!-- Contenedor del video con iframe embebido de YouTube -->
+        <div class="video-container">
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/Q0TGxreTRqo" 
+                title="Sistema Tributario Peruano: Concepto, Elementos y Clases"
+                frameborder="0" allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Breve descripción del video -->
+        <p class="descripcion-video">
+            Este video explica los <strong>conceptos, elementos y clases del Sistema Tributario Peruano</strong>. 
+        </p>
+    </section>
+
+    <!-- ==================== FORMULARIO DE CONTACTO ==================== -->
     <section id="formulario" class="contenido">
         <h2>Formulario de Contacto</h2>
+
+        <!-- Formulario simple de contacto para consultas -->
         <form>
             <label for="nombre">Nombre completo:</label>
             <input type="text" id="nombre" name="nombre" required>
@@ -63,64 +119,72 @@
             <label for="consulta">Consulta Tributaria:</label>
             <textarea id="consulta" name="consulta" rows="5" required></textarea>
 
-            <button type="submit">Enviar Consulta</button>
+            <button type="submit">
+                <i class="fa-solid fa-paper-plane"></i> Enviar Consulta
+            </button>
         </form>
     </section>
 
-    <!-- Tablas -->
-    <section id="tablas" class="contenido">
+    <!-- ==================== SECCIÓN DE TABLAS ==================== -->
+    <section id="tablas" class="contenido slide-up">
         <h2>Tasas y Cronogramas de Pago</h2>
 
-        <h3>Arbitrios Municipales 2025</h3>
-        <table>
-            <tr>
-                <th>Concepto</th>
-                <th>Monto (S/.)</th>
-                <th>Periodo</th>
-            </tr>
-            <tr>
-                <td>Limpieza Pública</td>
-                <td>50.00</td>
-                <td>Mensual</td>
-            </tr>
-            <tr>
-                <td>Parques y Jardines</td>
-                <td>30.00</td>
-                <td>Mensual</td>
-            </tr>
-            <tr>
-                <td>Serenazgo</td>
-                <td>45.00</td>
-                <td>Mensual</td>
-            </tr>
-        </table>
+        <!-- ===== Tabla de arbitrios municipales ===== -->
+        <div class="arbitrios">
+            <h3>Arbitrios Municipales 2025</h3>
+            <table>
+                <tr>
+                    <th>Concepto</th>
+                    <th>Monto (S/.)</th>
+                    <th>Periodo</th>
+                </tr>
+                <tr>
+                    <td>Limpieza Pública</td>
+                    <td>50.00</td>
+                    <td>Mensual</td>
+                </tr>
+                <tr>
+                    <td>Parques y Jardines</td>
+                    <td>30.00</td>
+                    <td>Mensual</td>
+                </tr>
+                <tr>
+                    <td>Serenazgo</td>
+                    <td>45.00</td>
+                    <td>Mensual</td>
+                </tr>
+            </table>
+        </div> 
 
-        <h3>Cronograma de Pago Predial 2025</h3>
-        <table>
-            <tr>
-                <th>Trimestre</th>
-                <th>Fecha Límite</th>
-            </tr>
-            <tr>
-                <td>1° Trimestre</td>
-                <td>28 de febrero</td>
-            </tr>
-            <tr>
-                <td>2° Trimestre</td>
-                <td>31 de mayo</td>
-            </tr>
-            <tr>
-                <td>3° Trimestre</td>
-                <td>31 de agosto</td>
-            </tr>
-            <tr>
-                <td>4° Trimestre</td>
-                <td>30 de noviembre</td>
-            </tr>
-        </table>
+        <!-- ===== Tabla de cronograma predial ===== -->
+        <div class="cronograma"> 
+            <h3>Cronograma de Pago Predial 2025</h3>
+            <table>
+                <tr>
+                    <th>Trimestre</th>
+                    <th>Fecha Límite</th>
+                </tr>
+                <tr>
+                    <td>1° Trimestre</td>
+                    <td>28 de febrero</td>
+                </tr>
+                <tr>
+                    <td>2° Trimestre</td>
+                    <td>31 de mayo</td>
+                </tr>
+                <tr>
+                    <td>3° Trimestre</td>
+                    <td>31 de agosto</td>
+                </tr>
+                <tr>
+                    <td>4° Trimestre</td>
+                    <td>30 de noviembre</td>
+                </tr>
+            </table>
+        </div>
     </section>
 
-    <!-- Pie de Página -->
+    <!-- ==================== PIE DE PÁGINA ==================== -->
     <footer>
         <p>&copy; 2025 Municipalidad de La Victoria - Sistema Tributario</p>
     </footer>
