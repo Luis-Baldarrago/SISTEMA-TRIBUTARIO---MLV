@@ -356,3 +356,50 @@ footer {
         flex-direction: row;
     }
 }
+
+.btn-info {
+    background: #003366;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.btn-info:hover {
+    background: #0066cc;
+}
+
+/* BOTÓN HAMBURGUESA */
+.btn-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* MENÚ OCULTO EN PANTALLA PEQUEÑA */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #003366;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul.mostrar {
+        display: block;
+    }
+
+    .btn-menu {
+        display: block;
+    }
+}
+
